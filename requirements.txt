@@ -1,0 +1,8 @@
+streamlit
+sklearn
+argparse
+pickle
+PIL
+keras
+gtts
+playsound
