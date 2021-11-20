@@ -5,4 +5,3 @@ keras
 gtts
 playsound
 matplotlib
-tensorflow
