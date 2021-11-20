@@ -1,7 +1,6 @@
 streamlit
 sklearn
 argparse
-PIL
 keras
 gtts
 playsound
