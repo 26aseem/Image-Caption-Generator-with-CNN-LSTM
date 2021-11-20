@@ -1,8 +1,5 @@
 # Import the required packages
-import os
 import numpy as np
-import pandas as pd
-import matplotlib.pyplot as plt
 import argparse
 import streamlit as st
 import pickle
@@ -10,9 +7,9 @@ from pickle import load
 from PIL import Image
 
 # For Model training and testing
-from keras.preprocessing.sequence import pad_sequences
-from keras.applications.xception import Xception
-from keras.models import load_model
+from tensorflow.keras.preprocessing.sequence import pad_sequences
+from tensorflow.keras.applications.xception import Xception
+from tensorflow.keras.models import load_model
 
 # For text-to-speech
 from gtts import gTTS
