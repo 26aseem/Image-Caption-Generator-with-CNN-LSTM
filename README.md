@@ -21,5 +21,25 @@ For the image caption generator, we will be using the Flickr_8K dataset. The Fli
 - Convolutional neural networks are a type of deep neural network that can process data in the form of a 2D matrix. Images are easily represented as a 2D matrix, and CNN is an   excellent tool for working with them. CNN is mostly used to classify images and determine whether they depict a bird, a jet, or Superman, among other things.
 - Long short term memory (LSTM) is a form of RNN (recurrent neural network) that is particularly well adapted to sequence prediction challenges.
 - So, to make our image caption generator model, we will be merging these architectures. It is also called a CNN-RNN model.
-* CNN is used for extracting features from the image. We will use the pre-trained model Xception.
-* LSTM will use the information from CNN to help generate a description of the image.
+- CNN is used for extracting features from the image. We will use the pre-trained model Xception.
+- LSTM will use the information from CNN to help generate a description of the image.
+
+## Create Data generator
+To make this task into a supervised learning task, we have to provide input and output to the model for training. We have to train our model on 6000 images and each image will contain 2048 length feature vector and caption is also represented as numbers. This amount of data for 6000 images is not possible to hold into memory so we will be using a generator method that will yield batches. The generator will yield the input and output sequence.
+The input to our model is [x1, x2] and the output will be y, where x1 is the 2048 feature vector of that image, x2 is the input text sequence and y is the output text sequence that the model has to predict.
+
+## Defining the CNN-LSTM model
+To define the structure of the model, we will be using the Keras Model from Functional API. It will consist of three major parts:
+- Feature Extractor – The feature extracted from the image has a size of 2048, with a dense layer, we will reduce the dimensions to 256 nodes.
+- Sequence Processor – An embedding layer will handle the textual input, followed by the LSTM layer.
+- Decoder – By merging the output from the above two layers, we will process by the dense layer to make the final prediction. The final layer will contain the number of nodes equal to our vocabulary size.
+
+## Training the model
+To train the model, we will be using the 6000 training images by generating the input and output sequences in batches and fitting them to the model using model.fit_generator() method.
+
+## Testing the model
+The model has been trained, now, we will make a separate file testing_caption_generator.py which will load the model and generate predictions. The predictions contain the max length of index values so we will use the same tokenizer.p pickle file to get the words from their index values.
+
+## Output
+An interactive python based GUI has been developed using streamlit package and deployed on Heroku platform.
+The screenshots of the website are displayed below.
