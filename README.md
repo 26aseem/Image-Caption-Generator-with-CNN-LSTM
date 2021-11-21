@@ -26,7 +26,8 @@ For the image caption generator, we will be using the Flickr_8K dataset. The Fli
 - So, to make our image caption generator model, we will be merging these architectures. It is also called a CNN-RNN model.
 - CNN is used for extracting features from the image. We will use the pre-trained model Xception.
 - LSTM will use the information from CNN to help generate a description of the image.
-
+- Caption text is converted to speech using the gTTS (Google Text-to-Speech) library of Python.
+- The generated caption is read aloud automatically for the user.
 
 <img width="462" alt="Screenshot 2021-11-21 211848" src="https://user-images.githubusercontent.com/43955843/142769551-d57c5e5f-355e-40cd-b2fe-06821299cf96.png">
 
