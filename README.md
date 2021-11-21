@@ -49,18 +49,18 @@ The screenshots of the website are displayed below.
 
 <img width="960" alt="image" src="https://user-images.githubusercontent.com/43955843/142769289-9c4520f7-9679-4f75-9ae9-a3cafdc16cf6.png">
 
-                                                                      Snapshot of the interactive GUI
+                               Snapshot of the interactive GUI
 
 
 
 
 <img width="628" alt="image" src="https://user-images.githubusercontent.com/43955843/142769327-ca309dd0-e7c3-4677-b855-96540e57ff88.png">
 
-                                                                      Snapshot of a sample image uploaded for caption generation
+                Snapshot of a sample image uploaded for caption generation
 
 
 
 
 <img width="574" alt="image" src="https://user-images.githubusercontent.com/43955843/142769345-6475e726-58bf-4df2-8052-782ada66ee93.png">
 
-                                                                       Snapshot of the caption generated for the sample image
+                Snapshot of the caption generated for the sample image
