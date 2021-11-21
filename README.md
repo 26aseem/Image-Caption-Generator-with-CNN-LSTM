@@ -1,5 +1,8 @@
 # Image-Caption-Generator-with-CNN-LSTM
 
+## Project Link
+https://image-caption-generator-aseem.herokuapp.com
+
 
 ## Introduction
 You saw an image and your brain readily deduced what it represented, but can a computer deduce what it represents? We can now develop models that can generate captions for images thanks to advances in deep learning techniques, the availability of large datasets, and computer power. This is what we'll do in this Python-based project, where we'll combine Convolutional Neural Networks and a sort of Recurrent Neural Network (LSTM) deep learning approaches.
@@ -43,3 +46,17 @@ The model has been trained, now, we will make a separate file testing_caption_ge
 ## Output
 An interactive python based GUI has been developed using streamlit package and deployed on Heroku platform.
 The screenshots of the website are displayed below.
+
+<img width="960" alt="image" src="https://user-images.githubusercontent.com/43955843/142769289-9c4520f7-9679-4f75-9ae9-a3cafdc16cf6.png">
+
+Snapshot of the interactive GUI
+
+
+<img width="628" alt="image" src="https://user-images.githubusercontent.com/43955843/142769327-ca309dd0-e7c3-4677-b855-96540e57ff88.png">
+
+Snapshot of a sample image uploaded for caption generation
+
+
+<img width="574" alt="image" src="https://user-images.githubusercontent.com/43955843/142769345-6475e726-58bf-4df2-8052-782ada66ee93.png">
+
+Snapshot of the caption generated for the sample image
